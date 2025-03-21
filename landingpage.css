@@ -1,0 +1,50 @@
+body{
+    background: #000;
+    background-image: linear-gradient(rgba(0, 255, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+#typing-text{
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff99;
+}
+
+.floating-text{
+    color: rgba(0, 255, 153, 0.9);
+    position: absolute;
+    font-size: 14px;
+    animation: floatText 10s infinite linear;
+}
+
+@keyframes floatText {
+    from {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-10vh) translateX(20vw);
+        opacity: 0.2;
+    }
+}
+
+.home-link{
+    color: #00ff99;
+    background-color: #000;
+    border: 1px solid #00ff99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.home-link:hover{
+cursor: pointer;
+box-shadow: 1px;
+box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Omeje</title>
+    <link href="landingpage.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+    <h1 id="typing-text"></h1>
+    
+    <script>
+  var typed = new Typed("#typing-text", {
+    strings:[
+               'print("Joshua Omeje\'s Personal Website")',
+                '&lt;p&gt;Joshua Omeje\'s Personal Website&lt;/p&gt; ',
+                'console.log("Joshua Omeje\'s Personal Website");'
+            ],
+    typeSpeed: 75,
+    backSpeed: 50,
+    loop: true
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+            const texts = document.querySelectorAll(".floating-text");
+            texts.forEach(text => {
+                text.style.left = Math.random() * 100 + "vw";
+                text.style.top = Math.random() * 100 + "vh";
+                text.style.animationDuration = (5 + Math.random() * 10) + "s";
+            });
+        });
+    </script>
+
+<div class="floating-text">5qr9wn1816g4om048ui</div>
+<div class="floating-text">21xm71iedgt16zy8gzdc</div>
+<div class="floating-text">wna9mpxugzxy4eztopq</div>
+<div class="floating-text">x1y2z3a4b5c6d7e8f9</div>
+<div class="floating-text">0110101011101001</div>
+<div class="floating-text">alpha_beta_gamma</div>
+<div class="floating-text">cyber_future_now</div>
+<div class="floating-text">init_system_42</div>
+
+
+<div class="btn-cntr">
+<a href="index.html"><button class="home-link">Click here</button></a>
+</div>
+</body>
+</html>
