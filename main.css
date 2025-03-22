@@ -4,36 +4,24 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     background: #000;
     background-image: linear-gradient(rgba(0, 255, 0, 0.2) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 0, 0.2) 1px, transparent 1px);
     background-size: 50px 50px;
+
+}
+
+
+.floating-text-cntr{
     overflow: hidden;
-}
-
-
-.floating-text{
-    color: rgba(0, 255, 153, 0.9);
-    position: absolute;
-    font-size: 14px;
-    animation: floatText 10s infinite linear;
-}
-
-@keyframes floatText {
-    from {
-        transform: translateY(100vh) translateX(0);
-        opacity: 0.8;
-    }
-    to {
-        transform: translateY(-10vh) translateX(20vw);
-        opacity: 0.2;
-    }
 }
 
 /*navigation*/
 .main-nav-cntr{
-    background-color: transparent;
+    background-color: black;
     position: fixed;
     width: 100%;
     top: 0;
@@ -62,9 +50,7 @@ body{
 }
 
 .nav-item:hover{
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+color: #82e9c0;
 }
 
 @-webkit-keyframes glow {
@@ -102,7 +88,7 @@ font-size: 35px;
     background-color: transparent;
     color: #00ff99;
     border: 1px solid #00ff99;
-    padding: 20px 30px;
+    padding: 10px 30px;
     font-family: monospace;
     font-size: 18px;
     
@@ -114,9 +100,9 @@ font-size: 35px;
 
  .resume:hover{
     cursor: pointer;
-    transition: all 0.5s ease-in;
-    box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+    box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
  }
+
 /*main hero section*/
  .main-hero-cntr{
     margin-top: 150px;
@@ -133,6 +119,7 @@ font-size: 35px;
     font-family: monospace;
     color: #00ff99;
     font-size: 20px;  
+    padding-top: 20px;
  }
 
  .button-section{
@@ -168,3 +155,88 @@ font-size: 35px;
 transform: scale(1.09);
 color: #4ebc90;
  }
+
+ /*skills tab*/
+.skills-entire-cntr{
+    display: flex;
+    gap: 60px;
+    overflow: hidden;
+}
+.skills-cntr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    animation: 5s slide infinite linear;
+    gap: 60px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.skills-entire-cntr:hover .skills-cntr {
+    animation-play-state: paused;
+}
+
+ .skills-box-temp{
+    border: 4px solid #00ff99;
+    position: relative;
+    padding: 30px; /* smaller padding for control */
+    width: 450px;
+    height: 200px; /* fixed height for consistent box size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff99;
+    background-color: #000;
+    
+    
+ }
+
+ .skills-box-temp:hover{
+background-color: transparent;
+transition: all ease-in .21s;
+ }
+
+
+ .box-header{
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+ }
+
+ .skills-img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-bottom: 30px;
+ }
+
+ .skills-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+ }
+ 
+
+
+ .box-descr{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 10px;
+ }
+
+ .text-cntr{
+    width: 100%;
+ }
+
+ @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .text-cntr{
+    padding-top: 30px;
+  }
