@@ -360,7 +360,7 @@ background-color: black;
 .skills-icn{
 display: flex;
 justify-content: center;
-padding-bottom: 20px;
+padding-bottom: 40px;
 }
 
 .skills-text{
@@ -405,6 +405,15 @@ color: #00ff99;
   top: 40%;
   color: #00ff99;
 }
+
+#next:hover{
+  cursor: pointer;
+}
+
+#prev:hover{
+  cursor: pointer;
+}
+
 #prev{
   position: absolute;
   left: 50px;
@@ -582,3 +591,5 @@ background-color: #000;
     display: none;
   }
 }
+
+
