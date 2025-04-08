@@ -151,6 +151,11 @@ font-size: 35px;
   font-size: 18px;
 }
 
+.about-me-btn:hover{
+  box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+  cursor: pointer;
+}
+
 .links{
   font-family: monospace;
   color: #00ff99;
