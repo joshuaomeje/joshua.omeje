@@ -392,8 +392,8 @@ color: #00ff99;
 .item{
   position: absolute;
   width: 400px;
-  height: 520px;
-  text-align: justify;
+  height: 380px;
+  text-align: center;
   background-color: #000000;
   border-radius: 10px;
   padding: 20px;
@@ -452,6 +452,7 @@ color: #00ff99;
   text-align: center;
   font-family: sans-serif;
   padding-bottom: 30px;
+  padding-top: 10%;
 }
 
 .item-text{
@@ -499,6 +500,7 @@ color: #00ff99;
   height: 800px;
 
 }
+
 
 /*contact area*/
 .contact-me-cntr{
